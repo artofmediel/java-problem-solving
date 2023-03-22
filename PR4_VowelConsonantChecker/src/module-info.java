@@ -2,7 +2,7 @@
  * 
  */
 /**
- * @author Danielle
+ * @author mediel
  *
  */
 module PR4_VowelConsonantChecker {
