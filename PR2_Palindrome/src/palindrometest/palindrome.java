@@ -76,7 +76,31 @@ public class palindrome {
 							//a--;	//decrement the index so that the next input will overwrite the previous one
 							
 							//...we do this instead
-							num[(a-1)] = Integer.MAX_VALUE;
+							
+							//check it on string data format 
+							
+							//hold value
+							String tempText = input;
+							//set 2 pointers
+							int leftPointer = 0;
+							int rightPointer = tempText.length()-1;
+							
+							while(leftPointer <  rightPointer) {
+								if(tempText.charAt(leftPointer) != tempText.charAt(rightPointer))
+								{
+									//store non palindrome value
+									num[(a-1)] = Integer.MAX_VALUE;
+								}
+								else 
+								{
+									//store palindrome value
+									num[(a-1)] = 121;	
+								}
+								leftPointer++;
+								rightPointer--;
+							}
+							
+							
 							
 						} else {
 							num[(a-1)] = Integer.parseInt(input);
